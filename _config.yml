@@ -1,0 +1,14 @@
+# Site Settings
+title: Maxim and Sian Wedding
+email: maxandsian@gmail.com
+description: >
+  All things Maxim and Sian's Wedding
+baseurl: ""
+url: "http://sianandmaxim.github.io"
+github_username:  sianandmaxim
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
