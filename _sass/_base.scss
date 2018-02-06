@@ -1,11 +1,13 @@
 $content-width: 800px;
-$main: #2554C7;//#19CCAA; // turquise main thing
+
+$main: #3d94d0;//#19CCAA; 
+$heading-font-color: #0B3C5D;
+$gold-leaf:#D9B310;
 $font-style: 'Open Sans', sans-serif;
-$font-color: #2B3856;
-$link-color: #000080;
+$font-color: #1D2731;
+$link-color: $heading-font-color;
 $link-hover-color: $main;
 $heading-font: 'Muli', sans-serif;
-$heading-font-color: #151B54;
 $light: #E7EDF4;
 $header: #FAFAFA; //#1D1425;
 
