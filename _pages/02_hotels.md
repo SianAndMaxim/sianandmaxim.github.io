@@ -6,7 +6,7 @@ permalink: /accommodation/
 
 ### Marriott Hotel, Regents Park
 
-We have a limited number of rooms on hold for our wedding guests on both 1st and 2nd June at the Marriott Hotel, Regents Park. The hotel is a 5 minute taxi ride or 20 minute walk from Cecil Sharp House.
+We have a limited number of rooms on hold for our wedding guests on the 1st and 2nd June at the Marriott Hotel, Regents Park. The hotel is a 5 minute taxi ride or 20 minute walk from Cecil Sharp House.
 
 Rooms are £179 for Single Occupancy and £192 for Double Occupancy including breakfast at Carluccio’s. 
 
