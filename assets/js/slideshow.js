@@ -1,5 +1,8 @@
 var slideIndex = 0;
-carousel();
+
+document.addEventListener('DOMContentLoaded', function() {
+   carousel();
+}, false);
 
 function randomRemove(array) {
     var indexToRemove = Math.trunc(getRandomArbitrary(0, array.length))
