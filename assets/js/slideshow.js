@@ -42,8 +42,8 @@ function carousel() {
     slides = Array.from(document.getElementsByClassName("img-box"));
     boxes = document.getElementsByClassName("slide");
 
-    var currentSelectedIndexes = [0, 2]
-    var remainingIndexes = [1, 3]
+    var currentSelectedIndexes = [0, 1]
+    var remainingIndexes = [2, 3, 4, 5, 6, 7]
 
     for (var i = 0; i < remainingIndexes.length; i++) {
         slides[remainingIndexes[i]].style.opacity = 0
@@ -54,10 +54,25 @@ function carousel() {
 
     setInterval(function() {
 
-        var newGuyIndex = randomRemove(remainingIndexes)
-        var oldGuyIndex = randomRemove(currentSelectedIndexes)
-        remainingIndexes.push(oldGuyIndex)
-        currentSelectedIndexes.push(newGuyIndex)
+        const mq = window.matchMedia( "(min-width: 481px)" );
+
+        var oldGuyIndex = -1;
+
+        if (mq.matches) {
+          oldGuyIndex = randomRemove(currentSelectedIndexes);
+        } else {
+
+          oldGuyIndex = currentSelectedIndexes[0];
+
+          if (slides[oldGuyIndex].parentNode.innerHTML !== boxes[0].innerHTML) {
+            oldGuyIndex = currentSelectedIndexes[1];
+          } 
+        }
+
+        var newGuyIndex = remainingIndexes.pop()
+
+        remainingIndexes.unshift(oldGuyIndex)
+        currentSelectedIndexes.unshift(newGuyIndex)
 
         var newGuy = slides[newGuyIndex]
         var oldGuy = slides[oldGuyIndex]
@@ -72,8 +87,6 @@ function carousel() {
           oldGuy.style.opacity = 0
           newGuy.style.zIndex = -100
         }, 500);
-
-        currentBoxIndex = currentBoxIndex==0 ? 1 : 0
 
       // for (var i = 0; i < remainingIndexes.length; i++) {
       //   slides[remainingIndexes[i]].style.opacity = 0
