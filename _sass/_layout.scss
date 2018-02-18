@@ -67,6 +67,54 @@ time {
 	width: 100%;
 }
 
+
+/* Slideshow */
+
+
+.slideshow {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.slide {
+	position:relative;
+  margin: 0 1%;
+  width:48%;
+  padding-bottom: 48%;
+}
+
+.slide:after {
+
+}
+
+.img-box {
+  transition: opacity 1s ease-in;
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.img-box img {
+  width:100%;
+  height: 100%;
+  object-fit: cover; /* Do not scale the image */
+  object-position: center;
+}
+
+.slide img {
+  display: block;
+}
+
+
+
 /* Aside */
 
 aside {
