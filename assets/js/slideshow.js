@@ -66,7 +66,10 @@ function carousel() {
 
           if (slides[oldGuyIndex].parentNode.innerHTML !== boxes[0].innerHTML) {
             oldGuyIndex = currentSelectedIndexes[1];
+            currentSelectedIndexes.splice(1, 1)
           } 
+
+          currentSelectedIndexes.splice(0, 1)
         }
 
         var newGuyIndex = remainingIndexes.pop()
