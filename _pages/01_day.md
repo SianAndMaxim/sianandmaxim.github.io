@@ -6,7 +6,7 @@ permalink: /ontheday/
 
 ### Arriving
 
-Please arrive at Cecil Sharp House by 1:30pm on the 2nd June 2018.
+Please arrive at Cecil Sharp House by 1:30pm on the 2nd June 2018. Evening guests, any time from 7pm. 
 
 ### Parking 
 
